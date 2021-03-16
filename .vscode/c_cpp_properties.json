@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/",
+                "${workspaceFolder}/config",
+                "${workspaceFolder}/examples",
+                "${workspaceFolder}/hal/include",
+                "${workspaceFolder}/hal/utils/include",
+                "${workspaceFolder}/hpl/core",
+                "${workspaceFolder}/hpl/divas",
+                "${workspaceFolder}/hpl/dmac",
+                "${workspaceFolder}/hpl/gclk",
+                "${workspaceFolder}/hpl/mclk",
+                "${workspaceFolder}/hpl/osc32kctrl",
+                "${workspaceFolder}/hpl/oscctrl",
+                "${workspaceFolder}/hpl/pm",
+                "${workspaceFolder}/hpl/port",
+                "${workspaceFolder}/hri",
+                "${workspaceFolder}/CMSIS/Core/Include",
+                "${workspaceFolder}/samc21/include/",
+                "${workspaceFolder}/samc21/include/component",
+                "${workspaceFolder}/samc21/include/instance",
+                "${workspaceFolder}/samc21/include/pio"
+            ],
+            "defines": [
+                "DEBUG",
+                "__SAMC21J18A__"
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-gcc-arm",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ]
+            },
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

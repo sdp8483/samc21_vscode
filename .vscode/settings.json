@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "atmel_start.h": "c",
+        "driver_init.h": "c",
+        "atmel_start_pins.h": "c",
+        "hal_gpio.h": "c",
+        "hpl_gpio.h": "c",
+        "hal_delay.h": "c"
+    },
+    
+    "cortex-debug.armToolchainPath": "/usr/bin",
+    "cortex-debug.openocdPath": "/usr/bin/openocd"
+}
