@@ -3,8 +3,23 @@
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "build firmware",
+			"label": "build",
 			"command": "make",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}/gcc"
+			},
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compile using gcc makefile"
+		}
+		{
+			"type": "shell",
+			"label": "clean",
+			"command": "make clean",
 			"args": [],
 			"options": {
 				"cwd": "${workspaceFolder}/gcc"
