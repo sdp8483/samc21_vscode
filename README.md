@@ -27,7 +27,7 @@ Edit [`main.c`](main.c) with your application code. I have a simple blink sketch
 
 Use the keyboard shortcut *ctrl-shift-b* and then select the *build* task to compile the code. Select the *clean* task to remove previously compiled files. This is the same as if you type `make` or `make clean` in a terminal.
 
-Use the shortcut key `F5` to start the debugger. Your code will be uploaded to the development board and you can run by clicking the play button that appeared in the top center of your screen. Check the [VSC documentation](https://code.visualstudio.com/docs/editor/debugging) to learn how to use the VSC debugger.
+Use the shortcut key *F5* to start the debugger. Your code will be uploaded to the development board and you can run by clicking the play button that appeared in the top center of your screen. Check the [VSC documentation](https://code.visualstudio.com/docs/editor/debugging) to learn how to use the VSC debugger.
 
 # How to Use a Different Microcontroller
 1. Go to [Atmel Start](https://start.atmel.com) 
@@ -40,7 +40,7 @@ Use the shortcut key `F5` to start the debugger. Your code will be uploaded to t
 2. Start VSC and open the repository folder. *File -> Open Folder -> Select Folder*
 3. Open [`c_cpp_properties.json`](.vscode/c_cpp_properties.json) and change `__SAMC21J18A__` in the `defines` section, line 30, to the microcontroller you are using.
 4. Open ['launch.json](.vscode/launch.json) and change `svdFile`, line 14, to point to the file for your microcontroller. Should be the part number of the microcontroller you are using.
-5 Open [`openocd.cfg`](openocd.cfg) and change the chipname, line 6.
+5. Open [`openocd.cfg`](openocd.cfg) and change the chipname, line 6.
 
 # Troubleshooting
 If you run into issues with the Intellisense not working correctly or some other issues be sure to check the settings in [`c_cpp_properties.json`](.vscode/c_cpp_properties.json), you may need to add some more directories to your `includePath` or add  a preprocessor definition in the `defines` setting. Hovering over the settings labels (the blue text) will give a description popup. Reading the [Makefile](gcc/Makefile) gave me a few clues when setting up this repository for files that should be included and preprocessor definitions. I haven't tested this setup extensively, I just started with the SAMC21 microcontroller family, so it is possible I missed a setting or configured something incorrectly.
