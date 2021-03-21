@@ -1,8 +1,9 @@
 // #include <atmel_start.h>
-#include <samc21.h>
+#include <sam.h>
+// #include <samc21.h>
 
-#define REG_PORTA_PMUX7 (*(RwReg8 *) 0x41000037UL)	/* PortA pin mux register address for PA14 */
-#define REG_PA14_PINCFG (*(RwReg8 *) 0x4100004eUL)	/* PortA pin config register addres for PA14 */
+#define REG_PORTA_PMUX7 (*(RwReg8 *) 0x41000037UL)    /* PortA pin mux register address for PA14 */
+#define REG_PA14_PINCFG (*(RwReg8 *) 0x4100004eUL)    /* PortA pin config register addres for PA14 */
 
 int main(void) {
 	/* Initializes MCU, drivers and middleware */
